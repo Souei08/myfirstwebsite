@@ -10,7 +10,9 @@ body{
     background: transparent;
     border: 0;
     border-radius: 0;
+    height: 85px;
 }
+
 .navstyle .navbar-nav {
     text-align: right;
     font-weight: 600;
@@ -25,14 +27,34 @@ body{
     
     
 }
-.myCarousel{
+
+.carousel-fade{
     
-    top: -100px;
+    top: -105px;
     
 }
-
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    transition-property: opacity;
+  }    
+  .carousel-fade .carousel-inner .active {
+    opacity: 1;
+  }    
+  .carousel-fade .carousel-inner .active.left,
+  .carousel-fade .carousel-inner .active.right {
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+  }    
+  .carousel-fade .carousel-inner .next.left,
+  .carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+  }    
+  .carousel-fade .carousel-control {
+    z-index: 2;
+  }
 .navbar-brand{
-    padding-left: 100px;  
+    padding-left: 13px;  
 }
 
 .jumbotron {
