@@ -1,47 +1,58 @@
+body{
+    font-family: 'Viaoda Libre', cursive;
+}
 
 
- /* Remove the navbar's default margin-bottom and rounded borders */ 
-  .navbar {
-    margin-bottom: 0;
-    border-radius: 0 !important;
+.navstyle{
+    
+    width: 100%;
+    z-index: 1;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+}
+.navstyle .navbar-nav {
+    text-align: right;
+    font-weight: 600;
+    float: right;
+    padding-right: 100px;
+    text-transform: uppercase;
+    padding-top: 30px
+    
+}
+.navstyle .navbar-nav li a {
+    color: white;
     
     
-  }
-  .navbar-inverse {
-    margin: 0 !important;
-
-
-  }
-  /* Add a gray background color and some padding to the footer */
-  footer {
-    background-color: #f2f2f2;
-    padding: 25px;
-  }
-  
-.carousel-inner img {
-    width: 100%; /* Set width to 100% */
-    height: 30%;
-    margin: auto;
-    min-height:10px;
+}
+.myCarousel{
+    
+    top: -100px;
+    
 }
 
-/* Hide the carousel text when the screen is less than 600 pixels wide */
-@media (max-width: 600px) {
-  .carousel-caption {
-    display: none; 
-  }
-}
-.imageClass{
-  width: 100%;
-  height: 200px;
-  
+.navbar-brand{
+    padding-left: 100px;  
 }
 
-.carouselPosition{
-   height: 60px;
-   width: 60px;
-   background-color: black;
+.jumbotron {
+    text-align: center;
+    background: white;
+    margin-bottom: 30px ;
+}
 
+.img-responsive{
+    height: 100px;
+}
+
+.imageSize {
+    text-align: center;
 }
 
 
+.imageSize img{
+
+    width: 200px;
+    height: 200px;
+
+}
